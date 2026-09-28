@@ -1,23 +1,122 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nama Kamu</title>
-  <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; line-height: 1.6; }
-    img { width: 120px; border-radius: 50%; }
-    a { color: #0969da; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Najieb Haswell | Network Engineer</title>
+<meta name="description" content="Network engineer with experience since 2017, from field operations to IP core and R&D leadership. MPLS, SRv6, GPON/FTTH, wireless, Linux.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef2f4;
+    --ink: #14232b;
+    --muted: #4c5f69;
+    --line: #b9c6cd;
+    --accent: #0f6e75;
+    --node: #c8871a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1a20; --ink: #e6eef1; --muted: #9db0ba; --line: #2c414c; --accent: #4fc1c9; --node: #e3a23a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Public Sans", system-ui, sans-serif; line-height: 1.65;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 64px 22px 80px; }
+  h1, h2, h3 { font-family: "Bricolage Grotesque", system-ui, sans-serif; line-height: 1.15; margin: 0; }
+  header { display: flex; gap: 20px; align-items: center; margin-bottom: 28px; }
+  header img { width: 96px; height: 96px; border-radius: 50%; border: 3px solid var(--accent); background: var(--line); }
+  h1 { font-size: clamp(2rem, 6vw, 2.8rem); font-weight: 800; }
+  .role { color: var(--accent); font-weight: 500; margin: 4px 0 0; }
+  .lead { font-size: 1.08rem; max-width: 62ch; margin: 0 0 14px; }
+  h2 { font-size: 1.5rem; margin: 56px 0 20px; }
+
+  .path { list-style: none; margin: 0; padding: 0 0 0 30px; position: relative; }
+  .path::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; border-left: 2px dashed var(--line); }
+  .path li { position: relative; padding-bottom: 26px; }
+  .path li:last-child { padding-bottom: 0; }
+  .path li::before {
+    content: ""; position: absolute; left: -30px; top: 6px; width: 16px; height: 16px;
+    border-radius: 50%; background: var(--bg); border: 3px solid var(--node);
+  }
+  .path li:last-child::before { background: var(--accent); border-color: var(--accent); }
+  .path h3 { font-size: 1.1rem; font-weight: 600; }
+  .path .when { color: var(--accent); font-size: .9rem; font-weight: 500; margin: 2px 0 0; }
+  .path p { margin: 4px 0 0; color: var(--muted); }
+
+  .skills { display: grid; gap: 18px; }
+  .skills h3 { font-size: 1rem; margin-bottom: 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags span { border: 1px solid var(--line); border-radius: 6px; padding: 3px 11px; font-size: .93rem; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 3px solid var(--node); outline-offset: 3px; }
+  footer { margin-top: 56px; color: var(--muted); }
+</style>
 </head>
 <body>
-  <img src="https://github.com/username.png" alt="Foto profil">
-  <h1>Nama Kamu</h1>
-  <p>Web developer dari Yogyakarta. Suka belajar hal baru.</p>
-  <h2>Kontak</h2>
-  <ul>
-    <li><a href="https://github.com/najiebhaswell">GitHub</a></li>
-    <li><a href="mailto:admin@haswell.my.id">Email</a></li>
-  </ul>
+<main>
+  <header>
+    <img src="https://github.com/najiebhaswell.png" alt="Portrait of Najieb Haswell">
+    <div>
+      <h1>Najieb Haswell</h1>
+      <p class="role">Network Engineer · Senior Leader, R&amp;D</p>
+    </div>
+  </header>
+
+  <p class="lead">
+    Network engineer with hands-on experience since 2017 across the full service stack, from field installation of
+    fiber and wireless links to NOC operations, IP core networks, and research and development.
+  </p>
+  <p class="lead">
+    I currently lead R&amp;D while remaining involved in day-to-day network operations. Having worked at every layer,
+    I bring a practical view of how design decisions play out in production.
+  </p>
+
+  <h2>Experience</h2>
+  <ol class="path">
+    <li>
+      <h3>Field Technician, Wireless &amp; Fiber Optic</h3>
+      <p class="when">2017</p>
+      <p>Installed, configured, and troubleshot wireless links and fiber optic infrastructure.</p>
+    </li>
+    <li>
+      <h3>NOC Helpdesk Engineer</h3>
+      <p>Handled customer incidents, monitored service health, and coordinated fault resolution with field teams.</p>
+    </li>
+    <li>
+      <h3>NOC Engineer, IP Core</h3>
+      <p>Operated and maintained the core network, including routing, incident response, and change execution.</p>
+    </li>
+    <li>
+      <h3>Senior Leader, Research &amp; Development</h3>
+      <p class="when">Present</p>
+      <p>Lead R&amp;D initiatives on emerging network technologies, and continue to support NOC operations.</p>
+    </li>
+  </ol>
+
+  <h2>Core competencies</h2>
+  <div class="skills">
+    <div>
+      <h3>Core and transport networks</h3>
+      <div class="tags"><span>Routing</span><span>Switching</span><span>MPLS</span><span>SRv6</span></div>
+    </div>
+    <div>
+      <h3>Access networks</h3>
+      <div class="tags"><span>GPON / FTTH</span><span>Wireless</span></div>
+    </div>
+    <div>
+      <h3>Systems and automation</h3>
+      <div class="tags"><span>Linux system administration</span><span>Programming</span></div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://github.com/najiebhaswell">GitHub: najiebhaswell</a>
+  </footer>
+</main>
 </body>
 </html>
