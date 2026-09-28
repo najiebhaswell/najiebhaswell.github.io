@@ -54,6 +54,17 @@
 
   a { color: var(--accent); text-underline-offset: 3px; }
   a:focus-visible { outline: 3px solid var(--node); outline-offset: 3px; }
+  .cta { border: 1px solid var(--accent); border-radius: 10px; padding: 24px 24px 22px; }
+  .cta h2 { margin: 0 0 10px; }
+  .cta p { margin: 0 0 12px; }
+  .cta ul { margin: 0 0 16px; padding-left: 20px; color: var(--muted); }
+  .cta .btn {
+    display: inline-block; background: var(--accent); color: var(--bg); text-decoration: none;
+    font-weight: 500; padding: 10px 20px; border-radius: 6px;
+  }
+  .cta .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .cta .btn.alt { background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 9px 19px; }
+  .cta .btn:focus-visible { outline: 3px solid var(--node); outline-offset: 3px; }
   footer { margin-top: 56px; color: var(--muted); }
 </style>
 </head>
@@ -114,12 +125,28 @@
     </div>
     <div>
       <h3>Vendor experience</h3>
-      <div class="tags"><span>Juniper</span><span>Huawei</span><span>MikroTik</span><span>Cisco</span><span>HPE</span><span>Aruba</span><span>Ubiquiti</span><span>ZTE</span><span>Fortigate</span><span>and more</span></div>
+      <div class="tags"><span>Juniper</span><span>Huawei</span><span>MikroTik</span><span>Cisco</span><span>HPE</span><span>Aruba</span><span>Ubiquiti</span><span>ZTE</span><span>and more</span></div>
     </div>
   </div>
 
+  <section class="cta" style="margin-top:56px">
+    <h2>Work with me</h2>
+    <p>Need help with your network or systems? I am available for consulting and project-based engagements, including:</p>
+    <ul>
+      <li>Network design, implementation, and troubleshooting</li>
+      <li>GPON / FTTH and wireless network deployment</li>
+      <li>Linux system administration and DNS services</li>
+      <li>Multi-vendor environments: Juniper, Huawei, MikroTik, Cisco, and others</li>
+    </ul>
+    <div class="btns">
+      <a class="btn" href="mailto:najiebgretz12@gmail.com">Email</a>
+      <a class="btn alt" href="https://wa.me/6287739774932">WhatsApp</a>
+      <a class="btn alt" href="https://www.linkedin.com/in/ahmad-maimun-najib-3063b21a5/">LinkedIn</a>
+    </div>
+  </section>
+
   <footer>
-    <a href="https://github.com/najiebhaswell">GitHub: najiebhaswell</a>
+    <a href="https://github.com/najiebhaswell">GitHub</a> · <a href="mailto:najiebgretz12@gmail.com">najiebgretz12@gmail.com</a>
   </footer>
 </main>
 </body>
